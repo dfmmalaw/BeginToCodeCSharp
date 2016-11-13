@@ -249,6 +249,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="My Snaps apps\Countdown.cs" />
+    <Compile Include="My Snaps apps\EggTimer.cs" />
     <Compile Include="My Snaps apps\MyProgram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
