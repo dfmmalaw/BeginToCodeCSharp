@@ -1,6 +1,6 @@
 ﻿using SnapsLibrary;
 
-class Ch06_05_RepeatingTimesTables
+class Ch6_05_RepeatingTimesTables
 {
     public void StartProgram()
     {
