@@ -1,6 +1,6 @@
 ﻿using SnapsLibrary;
 
-class Ch6_05_RepeatingTimesTables
+class Ch6_06_ForTimesTable
 {
     public void StartProgram()
     {
@@ -8,11 +8,17 @@ class Ch6_05_RepeatingTimesTables
 
         while (true)
         {
-            int count = 1;
-            int timesValue = SnapsEngine.ReadInteger("Enter your times value.");
+            int timesValue = 2;
 
-            while (count < 13 && timesValue < 25)
+            SnapsEngine.ClearScreenTappedFlag();
+
+            for (int count = 1; count < 13; count = count + 1)
             {
+                if (count == 4)
+                {
+                    continue;
+                }
+
                 int result = count * timesValue;
 
                 string message = count.ToString() +
@@ -21,9 +27,11 @@ class Ch6_05_RepeatingTimesTables
 
                 SnapsEngine.DisplayString(message);
                 SnapsEngine.SpeakString(message);
-                count = count + 1;
+
+                if (SnapsEngine.ScreenHasBeenTapped())
+                    break;
             }
-            SnapsEngine.WaitForButton("Enter a value less than 25");
+            SnapsEngine.WaitForButton("Press to continue");
         }
     }
 }

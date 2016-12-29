@@ -248,6 +248,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="My Snaps apps\Ch6_06-ForTimesTable.cs" />
+    <Compile Include="My Snaps apps\Ch6_05-RepeatingTimesTables.cs" />
+    <Compile Include="My Snaps apps\Ch7_7-GuestsAtParty.cs" />
     <Compile Include="My Snaps apps\Chapter5-AlarmClock.cs" />
     <Compile Include="My Snaps apps\Chapter5-FortuneTeller.cs" />
     <Compile Include="My Snaps apps\Chapter6-CountVehicleTypes.cs" />
